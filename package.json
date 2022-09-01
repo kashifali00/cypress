@@ -1,0 +1,19 @@
+{
+  "name": "WebAutomationFrameworkCypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
