@@ -4,6 +4,8 @@
 # Log file
 *.log
 *.idea
+package-lock.json
+test_report.json
 
 # Ingore Directory
 
@@ -14,6 +16,9 @@ build/
 .gradle/
 .idea/
 node_modules/**
+cypress/videos/**
+cypress/screenshots/**
+/screenshots/**
 
 
 # Package Files #
