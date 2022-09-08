@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "rimraf -r ./cypress/reports/*.json",
+    "pretest": "rimraf -r mochawesome-report/*.{json,html}",
     "cypress:open": "cypress open",
-    "test": "npm run cypress-test || npm run posttest",
-    "posttest": "npm run merge_report && npm run generate-htmlreport",
-    "merge_report": "mochawesome-merge ./cypress/reports/*.json > ./test_report.json",
-    "generate-htmlreport": "marge ./test_report.json --reportDir ./cypress/reports",
+    "test": "npm run cypress-test",
     "cypress-test": "cypress run --reporter mochawesome"
   },
   "keywords": [],
