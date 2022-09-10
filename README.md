@@ -27,7 +27,8 @@ config.yml will created.
 
 `saucectl run`
 
-
+``saucectl key and password``
+`saucectl configure --username oauth-tautomation184-3e044 --accessKey e5fa89ab-4659-4fb8-9c14-f5848066cb30`
 
 
 
