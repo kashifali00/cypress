@@ -8,6 +8,5 @@ Given User is on Automationpractice.com
 When  User click on Sign button
 And   User type valid username
 And   User type valid password
-When  User click on login button
+And  User click on login button
 Then  User should be able to see sign out link
-

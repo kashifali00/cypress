@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: cypress
+defaults: {}
+showConsoleLog: false
+sauce:
+  region: eu-central-1
+  concurrency: 2
+  sauceignore: .sauceignore
+
+npm:
+  registry: https://registry.npmjs.org
+  packages:
+    lodash: "4.17.20"
+    "@badeball/cypress-cucumber-preprocessor": "^12.2.0"
+    "cypress": "^10.7.0"
+    "mochawesome": "^7.1.3"
+    "mochawesome-merge": "^4.2.1"
+    "mochawesome-report-generator": "^6.2.0"
+    "rimraf": "^3.0.2"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3"
+    "esbuild": "^0.15.7"
+    "typescript": "^4.7.4"
+
+cypress:
+  configFile: cypress.config.js
+  version: 10.7.0
+  record: false
+  key: ""
+  reporters: []
+suites:
+- name: cypress - windows 11 - chrome
+  browser: chrome
+  platformName: windows 11
+  timeout: 15m
+  config:
+    testingType: e2e
+    specPattern:
+    - '**/*.feature'
+  mode: sauce
+
+- name: cypress - windows 10 - firefox
+  browser: firefox
+  platformName: windows 10
+  config:
+    testingType: e2e
+    specPattern:
+    - '**/*.feature'
+  mode: sauce
+
+- name: cypress - macOS 12 - chrome
+  browser: chrome
+  platformName: macOS 12
+  timeout: 15m
+  config:
+    testingType: e2e
+    specPattern:
+    - '**/*.feature'
+  mode: sauce
+
+rootDir: .
+artifacts:
+  download:
+    match:
+    - '*'
+    when: always
+    directory: ./artifacts

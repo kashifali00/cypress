@@ -2,7 +2,7 @@
 /// <reference types="Cypress" />
 
 import { data } from "cypress/types/jquery";
-import { HomePage } from "../Pages/HomePageObjects";
+import { HomePage } from "../pages/HomePageObjects";
 
 
 let homepage = new HomePage();
