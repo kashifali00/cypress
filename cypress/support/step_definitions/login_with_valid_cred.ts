@@ -1,9 +1,4 @@
-import {
-    Given,
-    When,
-    And,
-    Then,
-} from "@badeball/cypress-cucumber-preprocessor"
+import { Given,When,And,Then } from "../../../node_modules/@badeball/cypress-cucumber-preprocessor/lib/methods";
 
 import {LoginPage} from "../../e2e/pages/LoginPageObjects" 
 import {DashboardPage} from "../../e2e/pages/DashboardPage";

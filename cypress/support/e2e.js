@@ -18,7 +18,3 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-
-before("Launching website before running the tests", () => {
-    cy.visit('/')
-})

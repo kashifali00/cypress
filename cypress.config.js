@@ -1,6 +1,6 @@
 const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
+const preprocessor =  require("@badeball/cypress-cucumber-preprocessor")
 const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
 async function setupNodeEvents(on, config) {
@@ -26,6 +26,7 @@ module.exports = defineConfig({
     baseUrl : "http://automationpractice.com/index.php",
     supportFile: false,
     setupNodeEvents,
+    projectId: "8rwz2r"
   },
 
 });
