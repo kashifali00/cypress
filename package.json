@@ -7,7 +7,7 @@
     "pretest": "",
     "cypress:open": "cypress open",
     "test": "npm run cypress-test",
-    "cypress-test": "cypress run --reporter mochawesome --record --key b038e26f-6c4c-4907-a6a4-7b80988dfab0"
+    "cypress-test": "cypress run --reporter mochawesome --record --key b038e26f-6c4c-4907-a6a4-7b80988dfab0 --tag staging"
   },
   "keywords": [],
   "author": "",

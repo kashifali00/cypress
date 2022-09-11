@@ -2,7 +2,11 @@
 
 ```Dependencies```
 
-1. Nodejs
+1. Nodejs 16 or higher
+2. install as-a utility to keep sceret password or configuration
+`npm install -g as-a`
+3. cypress version should be >=v10
+
 
 1. create a project folder and cd into it.
 2. open the terminal and type npm init and configure the package.json

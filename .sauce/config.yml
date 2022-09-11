@@ -24,8 +24,8 @@ npm:
 cypress:
   configFile: cypress.config.js
   version: 10.7.0
-  record: false
-  key: ""
+  record: true
+  key: "b038e26f-6c4c-4907-a6a4-7b80988dfab0"
   reporters: []
 suites:
 - name: cypress - windows 11 - chrome

@@ -28,5 +28,9 @@ module.exports = defineConfig({
     setupNodeEvents,
     projectId: "8rwz2r"
   },
+  env:{
+    username : "kashifali",
+    password : "admin123"
+  }
 
 });
