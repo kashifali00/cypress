@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "ES2021",
     "lib": ["ES2021", "dom"],
-    "types": ["cypress","node"]
+    "types": ["cypress", "node", "node_modules"],
+    "moduleResolution":"node"
   },
   "include": ["**/*.*"]
 }

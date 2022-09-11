@@ -19,4 +19,13 @@ export class LoginPage {
     get error_message_upon_invalid_cred() {
         return cy.get("div[class='alert alert-danger'] ol li")
     }
+
+    get error_message_invalid_email() {
+        return cy.get("div[id='create_account_error'] ol li")
+    }
+
+    get submitButton() {
+        cy.scrollTo('bottom')
+        return cy.get("button[id='SubmitCreate'] span")
+    }
 }

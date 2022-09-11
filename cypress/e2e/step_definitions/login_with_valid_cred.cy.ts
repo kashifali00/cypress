@@ -1,7 +1,7 @@
-import { Given,When,And,Then } from "../../../node_modules/@badeball/cypress-cucumber-preprocessor/lib/methods";
+import { Given, When, Then, And } from "@badeball/cypress-cucumber-preprocessor";
 
-import {LoginPage} from "../../e2e/pages/LoginPageObjects" 
-import {DashboardPage} from "../../e2e/pages/DashboardPage";
+import {LoginPage} from "../pages/LoginPageObjects" 
+import {DashboardPage} from "../pages/DashboardPage";
 
 
 let loginPage = new LoginPage();

@@ -24,9 +24,10 @@ export class HomePage {
         return cy.get('a[title=T-shirts]')
     }
     
-    get create_account_button(): any {
+    get create_account_button() {
         return cy.get('button[id=\'SubmitCreate\'] span')
     }
+
 }
     
     
