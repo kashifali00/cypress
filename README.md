@@ -34,5 +34,7 @@ config.yml will created.
 ``saucectl key and password``
 `saucectl configure --username oauth-tautomation184-3e044 --accessKey e5fa89ab-4659-4fb8-9c14-f5848066cb30`
 
+#Run from commandline
+```npx cypress run --browser chrome --headed --env email=kashifali@kashif.com,password=123456 --spec "cypress\e2e\features\login_with_valid_cred.feature"```
 
 

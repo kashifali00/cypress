@@ -7,7 +7,9 @@
     "pretest": "npm install --loglevel error",
     "cypress:open": "cypress open",
     "test": "npm run cypress-test",
-    "cypress-test": "cypress run --reporter mochawesome --record --key b038e26f-6c4c-4907-a6a4-7b80988dfab0 --tag staging"
+    "cypress-test": "cypress run --reporter mochawesome --record --key b038e26f-6c4c-4907-a6a4-7b80988dfab0 --tag staging",
+    "smoke": "cypress run --spec 'cypress/e2e/features/smoke/*.feature' --browser chrome --headed --record --key b038e26f-6c4c-4907-a6a4-7b80988dfab0 --tag smoke",
+    "regression": "cypress run --spec 'cypress/e2e/features/regression/*.feature' --browser chrome --headed --record --key b038e26f-6c4c-4907-a6a4-7b80988dfab0 --tag regression"
   },
   "keywords": [],
   "author": "",
