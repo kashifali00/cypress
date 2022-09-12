@@ -24,11 +24,12 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
-    "cypress": "^10.7.0",
-    "typescript": "^4.8.3",
     "@babel/core": "7.19.0",
     "@babel/preset-env": "7.19.0",
     "babel-loader": "8.2.5",
+    "cypress": "^10.7.0",
+    "saucectl": "^0.107.1",
+    "typescript": "^4.8.3",
     "webpack": "5.74.0"
   }
 }
